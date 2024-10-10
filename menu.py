@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 from flask import Flask
 app = Flask(__name__)
 @app.route('/')
@@ -114,30 +113,3 @@ def index():
 if __name__ == '_main_': 
   
     app.run(debug=True)
-=======
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>'PromptPilot'</title>
-    <link rel="stylesheet" href="static/style.css">
-<body>
-</head>
-    <header class="header">
-        <img src="images/PromptPilot.png" alt="Logo" class="logo">
-        <div class="slogan">
-            <p>Be Bold</p>
-        </div>
-        </header>
-        <section class="content">
-            <h1>About Us</h1>
-            <h2>Sign In</h2>
-            <h3>Login</h3>
-             <a href="page2.html">to the second page</a>
-    
-            </div>
-        </section>
-</body>     
-    </html>
->>>>>>> menu
