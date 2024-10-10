@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <div style="background-color: black; color: burlywood; font-family: 'Dubai', sans-serif; padding: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; font-size: 24px;">
+    <!-- Boutons d'abord -->
+    <div style="width: 100%; display: flex; justify-content: space-between; margin-bottom: 20px;">
+      <button style="background-color: burlywood; color: black; padding: 10px 20px; font-family: 'Dubai', sans-serif; font-size: 18px; border: none; cursor: pointer;">Subscribe</button>
+      <button style="background-color: burlywood; color: black; padding: 10px 20px; font-family: 'Dubai', sans-serif; font-size: 18px; border: none; cursor: pointer;">Organize</button>
+      <button style="background-color: burlywood; color: black; padding: 10px 20px; font-family: 'Dubai', sans-serif; font-size: 18px; border: none; cursor: pointer;">FAQ</button>
+    </div>
+
+    <!-- Formulaire Tally -->
+    <iframe src=https://tally.so/embed/w4o14o?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1></iframe>
+    
+    <!-- Contenu supplémentaire si nécessaire -->
+    <h1>Autres informations</h1>
+    <p>Ceci est du contenu supplémentaire qui apparaît après le formulaire Tally.</p>
+  </div>
+{% endblock %}
