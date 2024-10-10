@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1A1A1A; /* Black background */
+    color: white; /* White text */
+}
+
+/* Header with logo and title */
+.header {
+    display: flex;
+    justify-content: center; /* Centers the entire content horizontally */
+    align-items: center;
+    padding: 20px;
+    background-color: #070606; /* Dark background for header */
+}
+
+.logo-title {
+    display: flex;
+    align-items: center; /* Align logo and title horizontally */
+    gap: 20px; /* Space between logo and title */
+}
+
+.logo {
+    width: 50px; /* Adjust logo size */
+}
+
+h1 {
+    font-size: 32px;
+    color: white;
+    margin: 0;
+}
+
+/* Centered slogan */
+.slogan {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 18px;
+    color: white;
+}
+
+/* Menu container for the items */
+.menu-container {
+    display: flex;
+    justify-content: space-between; /* Distributes space evenly between items */
+    padding: 10px 50px; /* Adjust padding to control horizontal space */
+    margin-top: 20px;
+}
+
+/* Menu items styling */
+.menu-item {
+    color: rgb(201, 173, 14); /* Gold color */
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hover effect */
+.menu-item:hover {
+    text-decoration: underline;
+}
+
+/* Alignment for each item */
+.left {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.login {
+    color: rgb(201, 173, 14);
+}
+
+
+
+
+
+
