@@ -1,0 +1,38 @@
+from flask import Flask
+app = Flask(__name__)
+@app.route('/')
+def index():    
+  return '''
+    <html>
+        <head>
+             <title>'Prompt Pilot'
+            <style>
+                body {
+                    background-color: #1A1A1A;  /* Dark background */
+                    font-family: Arial, sans-serif; /* Font style */
+                }
+                .animated-text {
+                    color: goldenrod;
+                    animation: bounceIn 2s ease; /* Bounce-in animation */
+                }
+                @keyframes bounceIn {
+                    0% { transform: scale(0.5); }
+                    50% { transform: scale(1.2); }
+                    70% { transform: scale(0.9); }
+                    100% { transform: scale(1); }
+                }
+            </style>
+        </head>
+        <body>
+           <h1<My logo</h1>
+             <img src="images/PromptPilot.png" alt="This is the logo of the website"
+           <h2<BE BOLD</h2>
+           <h3<ABOUT US</h3>
+           <h4<SIGN IN</h4>
+           <h5<LOG IN</h5>
+        </body>
+    </html>
+    '''
+if __name__ == '_main_': 
+  
+    app.run(debug=True)

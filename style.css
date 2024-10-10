@@ -1,0 +1,48 @@
+/* head */
+body {
+    background-color: #1A1A1A;  /* Dark background */
+    font-family: Arial, sans-serif; /* Font style */
+}
+.animated-text {
+    color: white;
+    animation: bounceIn 2s ease; /* Bounce-in animation */
+}
+@keyframes bounceIn {
+    0% { transform: scale(0.5); }
+    50% { transform: scale(1.2); }
+    70% { transform: scale(0.9); }
+    100% { transform: scale(1); }
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #070606;
+    padding: 20px;
+}
+
+.logo {
+    width: 100px;
+    margin-right: 20px;
+}
+
+.slogan {
+    color: #f0e7e7;
+    font-size: 18px;
+}
+
+/* Main Content */
+
+h1, h2, h3 {
+    font-size: 32px;           
+    color: goldenrod;           
+    margin: 20px 0;           
+    text-align: center;        
+    font-weight: bold;         
+    text-transform: uppercase;
+}
+ 
+
+
