@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire Tally</title>
+    <style>
+        body {
+            background-color: black;
+            color: burlywood;
+            font-family: 'Dubai', sans-serif;
+            padding: 20px;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            font-size: 24px;
+        }
+
+        .button {
+            color: burlywood;
+            background-color: transparent;
+            border: 2px solid burlywood;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 24px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: burlywood;
+            color: black;
+        }
+
+        .faq-section {
+            margin-top: 40px;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: burlywood;
+            font-size: 32px;
+        }
+
+        h3 {
+            color: burlywood;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mon formulaire Tally</h1>
+
+    <!-- Les boutons pour Accueil, FAQ et Formulaire Tally -->
+    <div class="footer">
+        <a href="/" class="button">Accueil</a>
+        <a href="/faq" class="button">FAQ</a>
+        <a href="/" class="button">Retour au formulaire</a>
+    </div>
+    
+
+    <!-- L'intégration du formulaire Tally -->
+    <iframe src="https://tally.so/embed/w4o14o?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="100" frameborder="0" marginheight="0" marginwidth="0" title="Prompting Pilot"></iframe>
+
+    <!-- La section FAQ -->
+    <div class="faq-section">
+        <h2>FAQ - Comment rédiger des prompts efficaces ?</h2>
+
+        <div class="faq-item">
+            <h3>1. C’est quoi un prompt ?</h3>
+            <p>Un prompt, c’est tout simplement ce que tu tapes pour donner des instructions à un modèle d’IA comme moi. Plus tu es précis, plus tu as de chances d’obtenir exactement ce que tu veux.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>2. Pourquoi c’est important d’être clair et précis ?</h3>
+            <p>Imagine que tu donnes des directions à quelqu’un sans être clair, il risque de se perdre, non ? C’est pareil pour les prompts. Plus tu es précis, plus l’IA peut te comprendre et te donner des résultats pertinents.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>3. Faut-il être long ou court dans un prompt ?</h3>
+            <p>Ni trop long ni trop court. Trouve un juste milieu ! Si c’est trop court, l’IA peut manquer d’infos ; trop long, elle pourrait se perdre dans les détails. Concentre-toi sur les infos essentielles.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>4. Comment ajouter des détails sans que ça devienne compliqué ?</h3>
+            <p>Structure ton prompt ! Par exemple, commence par décrire le contexte, puis ce que tu attends en détail. Pas besoin de tout mettre d’un coup, pense à ajouter les infos importantes progressivement.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>5. Et si je veux quelque chose de visuel, comme une image ou un design ?</h3>
+            <p>Décris les éléments clés (couleurs, style, ambiance, etc.). Par exemple, au lieu de dire « un paysage », précise « un paysage de montagne enneigé avec un ciel rougeoyant au coucher du soleil ».</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>6. Comment faire si j’ai plusieurs idées ?</h3>
+            <p>Priorise ! Si tu veux tout inclure dans un seul prompt, il est possible que l’IA s’emmêle les pinceaux. Mieux vaut scinder tes idées en plusieurs prompts si elles sont très différentes.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>7. Que faire si je n’obtiens pas ce que je voulais ?</h3>
+            <p>Pas de panique, ça arrive ! Regarde ce que l’IA a compris, ajuste ton prompt en précisant certains détails ou en reformulant, et essaie à nouveau. C’est souvent une question d’essais.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>8. Dois-je utiliser des mots techniques ?</h3>
+            <p>Pas forcément. Si l’IA comprend les termes techniques, tu peux les utiliser, mais n’hésite pas à utiliser des mots simples si ça te paraît plus clair. Le but, c’est de rendre ton message compréhensible.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>9. Puis-je inclure des exemples dans mon prompt ?</h3>
+            <p>Oui, et c’est même recommandé ! Si tu veux un texte dans un style précis, par exemple, donne un petit extrait pour que l’IA comprenne mieux ce que tu cherches.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>10. Y a-t-il des astuces pour rendre mon prompt encore plus efficace ?</h3>
+            <p>Oui, tu peux ajouter des contraintes ou des précisions. Par exemple, dis si tu veux une réponse courte ou longue, un ton formel ou informel, ou encore des références à éviter.</p>
+        </div>
+    </div>
+
+    <script>
+        var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};
+        if("undefined"!=typeof Tally)v();
+        else if(d.querySelector('script[src="'+w+'"]')==null){
+            var s=d.createElement("script");
+            s.src=w;
+            s.onload=v;
+            s.onerror=v;
+            d.body.appendChild(s);
+        }
+    </script>
+</body>
+</html>

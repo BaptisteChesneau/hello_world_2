@@ -27,13 +27,8 @@ def index():
         </body>
     </html>
     '''
-# Nouvelle route pour la page "formulaire_tally"
-@app.route('/formulaire_tally')
-def formulaire_tally():
-    return render_template('formulaire_tally.html')
 
-
-app.run(debug=True)
+    app.run(debug=True)
 
 
 
