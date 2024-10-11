@@ -10,7 +10,6 @@
             color: burlywood; /* Texte couleur burlywood */
             font-family: 'Dubai', sans-serif;
             padding: 20px;
-            height: 100vh; /* Prendre toute la hauteur de la fenêtre */
             margin: 0;
         }
 
@@ -18,7 +17,6 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            flex-wrap: wrap;
             margin-top: 20px;
             font-size: 24px;
         }
@@ -38,14 +36,12 @@
             color: black;
         }
 
-        /* Pour que l'iframe prenne toute la hauteur disponible */
         iframe {
             width: 100%;
-            height: calc(100vh - 120px); /* Moins l'espace des boutons */
+            height: 103px; /* Hauteur selon le nouveau code */
             border: 0;
         }
     </style>
-    <script async src="https://tally.so/widgets/embed.js"></script> <!-- Script Tally -->
 </head>
 <body>
     <h1>Mon formulaire Tally</h1>
@@ -56,9 +52,10 @@
         <a href="/faq" class="button">FAQ</a>
     </div>
 
-    <!-- Nouveau formulaire Tally intégré -->
-    <iframe data-tally-src="https://tally.so/r/w4o14o?transparentBackground=1" frameborder="0" marginheight="0" marginwidth="0" title="Rédige ton prompt"></iframe>
-
+    <!-- Formulaire Tally intégré -->
+    <iframe src="https://tally.so/embed/w4o14o?alignLeft=1&hideTitle=1&dynamicHeight=1" loading="lazy" width="100%" height="103" frameborder="0" marginheight="0" marginwidth="0" title="Rédige ton prompt"></iframe>
+    
+    <!-- Script pour le Tally -->
     <script>
         var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};
         if("undefined"!=typeof Tally)v();
@@ -72,4 +69,3 @@
     </script>
 </body>
 </html>
-
